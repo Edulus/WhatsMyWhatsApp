@@ -1,0 +1,193 @@
+/*  CSS reset to remove browser styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  background-image: url("assets/background.jpg");
+  font-family: "Jost", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #25d366;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 0 0 1.5px #0f94cc;
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+img {
+  max-width: 40%;
+}
+
+.less-margin {
+  margin-bottom: 1px;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.large {
+  font-size: 2.5rem;
+}
+
+.medium {
+  font-size: 1.4rem;
+}
+
+.green-bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: oblique;
+  color: #097d70;
+}
+
+.emoji {
+  font-size: 2.5rem;
+}
+
+.three-words {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* this div frames the content */
+.wrapper {
+  display: flex;
+  justify-content: center; /* Centers the form horizontally on the page */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-wrapper {
+  margin-top: 32px; /* offset from the top of the screen */
+  max-width: 700px;
+  padding: 24px; /* padding all around the form */
+  background-color: #ddf3cc;
+  border-radius: 16px;
+  box-shadow: #25d366 0px 5px 25px;
+}
+
+/***** LABELS & INPUT FIELDS  *****/
+
+label {
+  color: #075e54;
+  font-weight: bold;
+}
+
+input {
+  background-color: #ece5dd;
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 75%;
+}
+
+.inputField input:focus {
+  box-shadow: 0px 0px 3px 4px rgb(34, 140, 240, 0.6);
+  outline: solid 2px #228cf0;
+  border-radius: 2px;
+}
+
+.inputField label {
+  width: 250px;
+  text-align: right;
+  font-size: 110%;
+  padding-right: 15px;
+}
+
+.inputField input {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #6e6d6d50;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/**** BUTTONS ****/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 12px 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  background-color: #128c7e;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(112, 11, 185, 0.703);
+}
+
+button:active {
+  outline: auto;
+  outline-color: #34b7f1;
+}
+
+button:hover {
+  background-color: #25d366;
+}
+
+/* Get 3 Words Result Animation */
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    #25d366 0%,
+    #128c7e 29%,
+    #34b7f1 67%,
+    #075e54 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  /* background-clip: text; */
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  /* display: inline-block; */
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
