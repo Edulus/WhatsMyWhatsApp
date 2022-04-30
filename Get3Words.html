@@ -19,10 +19,12 @@
     <div class="wrapper">
       <div class="inner-wrapper">
         <h1>
-          <i class="fa-solid fa-hand-holding-droplet"></i>
+          <span class="icons">
+            <i class="fa-solid fa-hand-holding-droplet"></i
+          ></span>
           Get 3
         </h1>
-
+        <br />
         <p>
           <span class="green-bold">Fill out</span> the fields below with your
           number & the three words that you'd like to represent your WhatsApp
@@ -31,18 +33,22 @@
           <a href="LookUp3Words.html">this page</a> of our site.
         </p>
         <br />
-        <form id="Get3Words" autocomplete="on" action="Get3WordsResult.html">
+        <div id="Get3WordsDiv">
+        <form id="Get3Words" autocomplete="on" action="Get3WordsResult.html" method="GET">
           <div class="inputField medium">
-            <label for="whatsAppNumber"
-              ><i class="fa-brands fa-whatsapp large"></i> Number</label
+            <label for="whatsAppNumber">
+              <span class="whatsapp-icon medium-size-font"
+                ><i class="fa-brands fa-whatsapp large"></i
+              ></span>
+              Number</label
             >
             <input
               type="text"
-              id="wordOne"
-              name="wordOne"
-              value="447730751925"
+              id="whatsAppNumber"
+              name="whatsAppNumber"
+              placeholder="your number"
               required
-              readonly
+              
             />
           </div>
           <br />
@@ -54,7 +60,7 @@
               name="wordOne"
               value="BBC"
               required
-              readonly
+              
             />
           </div>
 
@@ -66,7 +72,7 @@
               name="wordTwo"
               value="World"
               required
-              readonly
+              
             />
           </div>
           <div class="inputField">
@@ -77,11 +83,10 @@
               name="wordThree"
               value="Service"
               required
-              readonly
+              
             />
           </div>
-
-          <div id="threeWords"></div>
+</div>
           <br />
           <footer>
             <button class="submit" id="submitBtn" type="submit">

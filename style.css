@@ -16,24 +16,29 @@ html {
 
 h1 {
   font-weight: bold;
-  font-size: 3.5rem;
-  color: #25d366;
+  font-size: 3.6rem;
+  /* color: #25d366; */
   text-align: center;
-  margin-bottom: 15px;
-  text-shadow: 0 0 1.5px #0f94cc;
+  margin-bottom: 0.1px;
+  background-image: linear-gradient(0deg, #27b43e, #5efb7a);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 p {
   font-size: 1.3rem;
   text-align: justify;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 img {
   max-width: 40%;
+  border: 3px solid green;
+  box-shadow: 0 0px 20px #82ebdb;
 }
 
 .less-margin {
+  margin-top: 3px;
   margin-bottom: 1px;
 }
 
@@ -42,33 +47,34 @@ img {
 }
 
 .bold {
-  font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 0px;
 }
 
-.large {
-  font-size: 2.5rem;
-}
-
-.medium {
+.normal-size-font {
   font-size: 1.4rem;
 }
 
+.medium-size-font {
+  font-size: 2.3rem;
+}
+
+.large-size-font {
+  font-size: 3rem;
+}
+
+.emoji-font {
+  font-size: 4rem;
+}
+
+.very-large-size-font {
+  font-size: 5rem;
+}
+
 .green-bold {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   font-style: oblique;
   color: #097d70;
-}
-
-.emoji {
-  font-size: 2.5rem;
-}
-
-.three-words {
-  font-size: 2.5rem;
-  text-align: center;
 }
 
 /* this div frames the content */
@@ -115,7 +121,7 @@ input {
 .inputField label {
   width: 250px;
   text-align: right;
-  font-size: 110%;
+  font-size: 1.2rem;
   padding-right: 15px;
 }
 
@@ -181,7 +187,7 @@ button:hover {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   /* display: inline-block; */
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   font-style: italic;
 }
@@ -190,4 +196,53 @@ button:hover {
   to {
     background-position: 200% center;
   }
+}
+
+/* Media Queries */
+
+/* MOBILE DEVICES */
+@media (max-width: 400px) {
+  p {
+    font-size: 0.1rem;
+  }
+}
+
+/* iPads & tablets */
+@media (max-width: 750px) {
+  p {
+    font-size: 0.5rem;
+  }
+}
+
+.icons {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 4px 15px 4px 15px;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #27b43e, #5efb7a);
+}
+
+.whatsapp-icon {
+  color: #128c7e;
+}
+
+div {
+  /* border: red;
+  border-style: solid; */
+  /* align-items: baseline; */
+}
+
+#heading {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#Get3WordsDiv {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
