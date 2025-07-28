@@ -1,15 +1,47 @@
-## WhatsMyWhatsApp
+# WhatsMyWhatsApp
 
-<h3>~ 3 Words to Represent Your WhatsApp Contact Info ~</h3>
+**~ 3 Words to Represent Your WhatsApp Contact Info ~**
 
-WhatsMyWhatsApp is a single page web app that makes it possible to easily and simply share your WhatsApp contact info over audio only channels such as radio shows, telephone calls or verbal only communications.
+WhatsMyWhatsApp is a single-page web app that makes it possible to easily and simply share your WhatsApp contact info over audio-only channels such as radio shows, telephone calls, or verbal-only communications.
 
-It does this by allowing users to register three easily remembered words and associate them with their WhatsApp contact info.
+## Features
 
-Receivers of this info can then use those 3 words to look up the provider's contact information in our directory. They are served the provider's phone number and a QR code which may be scanned for easily saving the provider's info to their contacts list.
+*   **Easy Sharing:** Share your WhatsApp contact information using just three memorable words.
+*   **Simple Lookup:** Others can easily find your contact information by searching for your three words.
+*   **QR Code Generation:** A QR code is generated for easy saving of your contact information.
 
-<h3>Implementation</h3>
+## How it Works
 
-Following the Agile software development methodology, presented here is a non-functional mock-up of the future app using HTML & CSS. Future iterations will deploy Javascript, React, Node, Express and MongoDB to allow for user registration, data storage and real-world utility.
+1.  **Register:** Register your three easily remembered words and associate them with your WhatsApp contact info.
+2.  **Share:** Share your three words with others.
+3.  **Look Up:** Others can use your three words to look up your contact information in our directory.
+4.  **Save:** The receiver is served your phone number and a QR code which may be scanned for easily saving your info to their contacts list.
+
+## Tech Stack
+
+### Current (Mock-up)
+
+*   HTML
+*   CSS
+
+### Planned
+
+*   JavaScript
+*   React
+*   Node.js
+*   Express
+*   MongoDB
+
+## Screenshots
+
+| Get 3 Words                                     | Look Up 3 Words                                     |
+| ----------------------------------------------- | --------------------------------------------------- |
+| ![Get 3 Words](assets/whatsapp-question-mark.png) | ![Look Up 3 Words](assets/whatsapp-question-mark.png) |
+| **Get 3 Words Result**                          | **Look Up 3 Words Result**                          |
+| ![Get 3 Words Result](assets/QR_Code.png)         | ![Look Up 3 Words Result](assets/QR_Code.png)         |
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
 
 = END =
