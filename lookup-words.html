@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a80c8a2512.js" crossorigin="anonymous"></script>
+    <title>What's My WhatsApp?</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="wrapper">
+      <div class="inner-wrapper">
+        <p>
+          <span class="green-bold">Enter</span> the 3️⃣ words your contact
+          gave you.
+        </p>
+<br>
+        <p class="center bold">⚡️ Do it now ! !⚡️</p>
+        <br>
+        <form id="Get3Words" autocomplete="on">
+          <div class="inputField">
+            <label for="wordOne">Word 1️⃣</label>
+            <input id="wordOne" type="text" name="wordOne" required />
+          </div>
+          <div class="inputField">
+            <label for="wordTwo">Word 2️⃣</label>
+            <input id="wordTwo" type="text" name="wordTwo" required />
+          </div>
+          <div class="inputField">
+            <label for="wordThree">Word 3️⃣</label>
+            <input id="wordThree" type="text" name="wordThree" required />
+          </div><br>
+
+     <!-- SUBMIT Button -->
+
+        <footer>
+          <button
+            class="submit"
+            id="submitBtn"
+            type="submit"
+          >
+            Submit     <i class="fa-solid fa-paper-plane">   </i>
+          </button>
+        </form>
+        </footer>
+        <div id="result" style="display: none;">
+          <div id="heading" class="emoji-font" >
+            <div >🏁</div>
+            <div><h1 class="very-large-size-font">Result !</h1></div>
+            <div >🏁</div>
+          </div>
+
+            <p>
+              <span class="green-bold">Your contact's</span> WhatsApp number is:
+            </p>
+
+            <p id="number" class="center bold medium-size-font"></p>
+
+            <p>
+              <span class="green-bold">Scan</span> this QR code with your
+              smart phone to <span class="green-bold">✨automagically✨</span> add them
+              to your contacts list.<span ></span>
+            </p>
+
+            <br />
+            <p class="center">
+              <img id="qrCode" src="" alt="QR Code" />
+            </p>
+
+            <p class="center medium-size-font">
+              thank you for using<br />
+              <h1 class="large" >WhatsMyWhatsApp !</h1><p class="large-size-font center">🙏🏽</p>
+              </p>
+
+            <footer>
+              <form action="index.html">
+                <button class="submit " id="aboutBtn" type="submit"><i class="fa-solid fa-house-chimney"></i> Home</button>
+
+              </form>
+            </footer>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="lookup-words.js"></script>
+  </body>
+</html>

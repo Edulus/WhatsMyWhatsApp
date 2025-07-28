@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
@@ -16,25 +18,20 @@
     <title>What's My WhatsApp?</title>
   </head>
   <body>
+    <div id="header"></div>
     <div class="wrapper">
       <div class="inner-wrapper">
-        <h1>
-          <span class="icons">
-            <i class="fa-solid fa-hand-holding-droplet"></i
-          ></span>
-          Get 3
-        </h1>
         <br />
         <p>
           <span class="green-bold">Fill out</span> the fields below with your
           number & the three words that you'd like to represent your WhatsApp
           contact information. You'll be able give these words to anyone and
           they'll be able use them to look you up on
-          <a href="LookUp3Words.html">this page</a> of our site.
+          <a href="lookup-words.html">this page</a> of our site.
         </p>
         <br />
         <div id="Get3WordsDiv">
-        <form id="Get3Words" autocomplete="on" action="Get3WordsResult.html" method="GET">
+        <form id="Get3Words" autocomplete="on">
           <div class="inputField medium">
             <label for="whatsAppNumber">
               <span class="whatsapp-icon medium-size-font"
@@ -58,7 +55,6 @@
               type="text"
               id="wordOne"
               name="wordOne"
-              value="BBC"
               required
               
             />
@@ -70,7 +66,6 @@
               id="wordTwo"
               type="text"
               name="wordTwo"
-              value="World"
               required
               
             />
@@ -81,7 +76,6 @@
               id="wordThree"
               type="text"
               name="wordThree"
-              value="Service"
               required
               
             />
@@ -94,9 +88,33 @@
             </button>
           </footer>
         </form>
+        <div id="result" style="display: none;">
+          <h1 class="very-large-size-font">Your 3️ Words</h1>
+          <p><span class="green-bold">Your 3 Words</span> are...</p>
+
+          <p id="words" class="animate-charcter center"></p>
+          <p>
+            Now anyone who has these words can use them to look up your contact info in <a href="lookup-words.html">our directory</a>
+            </a> and easily add you to their
+            WhatsApp contacts list.
+          </p>
+          <br />
+
+          <p class="center medium-size-font">
+            thank you for using<br />
+            <h1 class="large-size-font" >WhatsMyWhatsApp !</h1><p class="large-size-font center">🙏🏽</p>
+            </p>
+
+            <footer>
+              <form action="index.html">
+                <button class="submit " id="aboutBtn" type="submit">Home    <i class="fa-solid fa-house-chimney"></i></button>
+              </form>
+            </footer>
+        </div>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <div id="footer"></div>
+    <script src="get-words.js"></script>
   </body>
 </html>
