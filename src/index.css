@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wa-green: #25d366;
+  --wa-teal: #128c7e;
+  --wa-dark: #075e54;
+  --wa-bubble: #dcf8c6;
+  --wa-card: #ddf3cc;
+  --wa-input: #ece5dd;
+}
+
+html {
+  font-family: "Jost", system-ui, sans-serif;
+  background: linear-gradient(160deg, #0b141a 0%, #075e54 55%, #128c7e 100%);
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.gradient-title {
+  font-weight: 700;
+  background-image: linear-gradient(0deg, #27b43e, #5efb7a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.wmw-card {
+  background-color: var(--wa-card);
+  border-radius: 16px;
+  box-shadow: #25d366 0px 5px 25px;
+}
+
+.wmw-input {
+  width: 100%;
+  height: 44px;
+  background-color: var(--wa-input);
+  border: 2px solid #6e6d6d50;
+  border-radius: 8px;
+  color: black;
+  font-size: 1.15rem;
+  text-align: center;
+  outline: none;
+  transition: box-shadow 0.15s ease;
+}
+
+.wmw-input:focus {
+  box-shadow: 0px 0px 3px 4px rgb(34, 140, 240, 0.6);
+  border-color: #228cf0;
+}
+
+.wmw-input::placeholder {
+  color: #8b8b8b;
+}
+
+.wmw-label {
+  color: var(--wa-dark);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.wmw-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 42px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-family: inherit;
+  border-radius: 8px;
+  background-color: var(--wa-teal);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+}
+
+.wmw-btn:hover:not(:disabled) {
+  background-color: var(--wa-green);
+  box-shadow: 0 5px 15px rgba(11, 20, 26, 0.35);
+}
+
+.wmw-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    #25d366 0%,
+    #128c7e 29%,
+    #34b7f1 67%,
+    #075e54 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
